@@ -14,8 +14,13 @@ video {
   max-width: 100%;
 }
 
+.planet video {
+  border-radius: 50%;
+}
+
 ul, li {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -47,34 +52,40 @@ table {
   margin-bottom: 1.5em;
 }
 
-html, body { height: 100%; }
+/* HOME PLANET */
 
-body {
-  background: #180C65;
-  color: white;
-  font-family: 'century';
-  margin: 0;
-  padding: 2em;
-  padding-bottom: 5em;
+#home-planet {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-i, em {
-  font-style: normal;
-  font-family: 'century italic';
+/* BACKGROUND STARS */
+
+.background-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-image: url('../images/stars/star1.png')
 }
 
-video {
-  border-radius: 50%;
-  max-width: 100%;
+.background-star-2 {
+  background-image: url('../images/stars/star2.png')
 }
 
-#nina {
-  max-width: 700px;
-  text-align: center;
+.background-star-3 {
+  background-image: url('../images/stars/star3.png')
 }
+
+/* SPECIAL */
 
 @font-face {
   font-family: 'century';
@@ -84,4 +95,472 @@ video {
 @font-face {
   font-family: 'century italic';
   src: url('../fonts/century-italic.woff');
+}
+
+body {
+  font-family: 'century';
+  /* font-family: Wingdings, fantasy !important; */
+  width: 1200vw;
+  height: 3000vh;
+  margin: 0;
+}
+
+i, em {
+  font-family: 'century italic';
+  font-style: normal;
+}
+
+a.button {
+  /* border: 1px solid #170068; */
+  /* padding: 0.7em 0.75em 0.6em; */
+  background: pink;
+  /* text-decoration: none !important; */
+}
+
+/* #countdowns {
+  text-align: right;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+} */
+
+.main-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* .main-nav__section-links {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  padding-left: 0;
+} */
+
+.main-nav__section-links li {
+  display: inline-block;
+  margin: 1em 0.12em 0;
+}
+
+nav a {
+  background: #170068;
+}
+
+#important-info {
+  font-family: 'century italic';
+  font-style: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 2px;
+  padding-top: 130px;
+}
+
+#important-info .info {
+  background: white;
+  color: #170068;
+  padding: 1.2em 2.4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  z-index: 2;
+  font-size: 4.5em;
+  line-height: 1.1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#important-info .welcome-vibe {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+}
+
+#important-info .welcome {
+  font-family: 'century';
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#important-info .pic {
+  /* position: absolute;
+  top: -12px;
+  right: 16px;
+  max-width: 212px;
+  z-index: 1; */
+  max-width: 240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav__section-links a,
+.main-nav__home-link__container a {
+  display: inline-block;
+  padding: 0.75em 1em 0.6em;
+  border: 1px solid white;
+}
+
+nav #message {
+  position: fixed;
+  top: 20px;
+  padding-top: 4em;
+  left: 20px;
+  max-width: 11vw;
+  z-index: -1;
+}
+
+.main-nav a.is-active {
+  background: white;
+  color: #170068;
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
+  text-align: center;
+}
+
+#home img {
+  max-height: 100vh;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  padding: 18px;
+  padding-top: 130px;
+}
+
+#travel {
+  top: 120vw;
+  left: 200vh;
+}
+
+#accommodations {
+  top: 220vw;
+  left: 400vh;
+}
+
+#itinerary {
+  top: 200vh;
+  left: 800vw;
+}
+
+#registry {
+  top: 2800vh;
+  left: 700vw;
+}
+
+#about {
+  top: 800vh;
+  left: 300vw;
+}
+
+.space {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.space.large {
+  width: 800px;
+  height: 800px;
+}
+
+#image-one {
+  top: 210vw;
+  left: 340vh;
+}
+
+#image-two {
+  top: 260vh;
+  left: 700vw;
+}
+
+#image-three {
+  top: 2600vh;
+  left: 750vw;
+}
+
+#image-four {
+  top: 800vh;
+  left: 750vw;
+}
+
+#image-five {
+  top: 2000vh;
+  left: 800vw;
+}
+
+#planet-alan {
+  top: 2800vh;
+  left: 900vw;
+}
+
+.planet {
+  float: left;
+  width: 40vh;
+  height: 40vh;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  /* font-family: 'century italic'; */
+  /* font-size: 4em; */
+  /* letter-spacing: 0.05em; */
+  /* transform: rotate(-12deg); */
+}
+
+.planet div {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.planet.small {
+  width: 25vh;
+  height: 25vh;
+}
+
+.planet.medium {
+  width: 40vh;
+  height: 40vh;
+}
+
+.planet.large {
+  width: 55vh;
+  height: 55vh;
+}
+
+.planet.larger {
+  width: 65vh;
+  height: 65vh;
+}
+
+.living-image {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.planet-image {
+  float: left;
+  z-index: -1;
+  width: 30vh;
+}
+
+.planet-image.small {
+  width: 22vh;
+}
+
+.planet-image.large {
+  width: 44vh;
+}
+
+.spacer {
+  width: 30vh;
+  height: 30vh;
+  float: left;
+}
+
+.space-fact {
+  background: rgb(25, 14, 111);
+  padding: 0.2em;
+  float: left;
+  max-width: 500px;
+  font-size: 2em;
+  font-family: 'century italic';
+}
+
+.paper {
+  background: white;
+  color: #170068;
+  border: 1px solid #170068;
+  padding: 1.5em;
+  max-width: 800px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+  float: left;
+}
+
+.paper p,
+.paragraph {
+  font-size: 1.2em;
+}
+
+.paper a {
+  color:  #170068;
+  text-decoration: underline;
+}
+
+.paper p:last-child {
+  margin-bottom: 0;
+}
+
+td {
+  border: 1px solid #170068;
+  padding: 0.7em 0.75em 0.6em;
+  vertical-align: top;
+  width: 50%;
+}
+
+td.third {
+  width: 33.333%;
+}
+
+td.fourth {
+  width: 25%;
+}
+
+.did-you-know {
+  margin-top: 32px;
+}
+
+.did-you-know .info {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 54px);
+  font-size: 1.2em;
+}
+
+.did-you-know .lightning {
+  width: 30px;
+  height: 74px;
+  background: url('/assets/images/lightning1.png');
+  background-size: 100% 100%;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.did-you-know .lightning.two {
+  width: 30px;
+  height: 74px;
+  background: url('/assets/images/lightning2.png');
+  background-size: 100% 100%;
+}
+
+.did-you-know .lightning.three {
+  width: 30px;
+  height: 74px;
+  background: url('/assets/images/lightning2.png');
+  background-size: 100% 100%;
+}
+
+.did-you-know span {
+  animation: flicker infinite 0.2s;
+}
+
+@keyframes flicker {
+  0% { background: rgba(19, 4, 99, 0.1); }
+  20% { background: rgba(19, 4, 99, 0.2); }
+  40% { background: rgba(19, 4, 99, 0.1); }
+  44% { background: rgba(19, 4, 99, 0.3); }
+  58% { background: rgba(19, 4, 99, 0.1); }
+  62% { background: rgba(19, 4, 99, 0.2); }
+  78% { background: rgba(19, 4, 99, 0.1); }
+  98% { background: rgba(19, 4, 99, 0.2); }
+  100% { background: rgba(19, 4, 99, 0.1); }
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-top: -0.1em;
+  margin-bottom: 2em;
+  font-family: 'century italic';
+}
+
+@media screen and (max-width: 980px) {
+
+  #important-info {
+    padding-top: 130px;
+  }
+
+  #important-info .info {
+    font-size: 3.2em;
+    line-height: 1.2;
+    padding: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  section {
+    padding: 2px;
+  }
+
+	.main-nav {
+    font-size: 0.8em;
+  }
+
+  .main-nav__section-links a, .main-nav__home-link__container a {
+    padding: 0.6em 0.9em 0.5em;
+  }
+
+  .paper {
+    margin-right: 0;
+  }
+
+  .paper {
+    padding: 1em;
+  }
+
+  #important-info .info {
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.8em;
+    line-height: 1.15;
+    max-width: 400px;
+  }
+  
+  #important-info .welcome {
+    font-family: 'century';
+    font-size: 12.8px;
+    margin-top: 1em;
+  }
+  
+  #important-info .pic {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .main-nav__section-links li {
+    display: inline-block;
+    margin: 1em 0 -0.3em;
+  }
+
+  td,
+  .did-you-know {
+    font-size: 12.8px;
+  }
+
 }
