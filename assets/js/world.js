@@ -178,7 +178,7 @@ function createStars() {
 function getStar(x, y, w, h, size) {
   const star = document.createElement("div")
   star.className = `background-star background-star-${Math.ceil(Math.random() * 3)}`
-  star.style.transform = `translate(${Math.round(y * h)}px, ${Math.round(x * w)}px)`
+  star.style.transform = `translate(${Math.round(x * w)}px, ${Math.round(y * h)}px)`
   star.style.width = Math.round(size) + 'px'
   star.style.height = Math.round(size) + 'px'
   return star
