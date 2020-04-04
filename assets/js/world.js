@@ -33,6 +33,11 @@ $(document).ready(function() {
     }, 100)
   );
 
+  $(window).on("load", function() {
+    setSectionLocations();
+    setActiveSectionFromScroll();
+  })
+
   $("a").on("click", function() {
     const id = $(this).attr("href");
     const target = $(id);
