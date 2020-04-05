@@ -5,7 +5,6 @@ var sections = [];
 $(document).ready(function() {
   setSectionLocations();
   setActiveSectionFromScroll();
-  createStars();
 
   createCountdown(
     "#wedding-countdown",
@@ -36,6 +35,7 @@ $(document).ready(function() {
   $(window).on("load", function() {
     setSectionLocations();
     setActiveSectionFromScroll();
+    createStars();
   })
 
   $("a").on("click", function() {
@@ -160,12 +160,15 @@ function createStars() {
   const starTargetSize = 75;
   const starMinSize = 15;
   const starChance = 0.1;
-  const rows = Math.round(document.body.clientHeight / starTargetSize);
-  const columns = Math.round(document.body.clientWidth / starTargetSize);
-  const w = document.body.clientWidth / columns;
-  const h = document.body.clientHeight / rows;
+  const scrollWidth = document.scrollingElement.scrollWidth;
+  const scrollHeight= document.scrollingElement.scrollHeight;
+  const rows = Math.round(scrollWidth / starTargetSize);
+  const columns = Math.round(scrollHeight / starTargetSize);
+  const w = scrollHeight  / columns;
+  const h = scrollWidth / rows;
 
   const fragment = document.createDocumentFragment()
+  console.log('creating stars', w, h)
 
   for (let y = 0; y < rows; ++y) {
     for (let x = 0; x < columns; ++x) {

@@ -73,7 +73,9 @@ table {
   top: 0;
   left: 0;
   z-index: -1;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-image: url('../images/stars/star1.png')
 }
 
@@ -526,8 +528,7 @@ h3 {
 
   .space,
   .planet,
-  .planet-image,
-  .background-star {
+  .planet-image {
     display: none;
   }
 
@@ -563,11 +564,11 @@ h3 {
     padding: 1em;
   }
 
-<<<<<<< HEAD
   h1 {
     font-size: 2.2em;
     margin-top: 0;
-=======
+  }
+  
   .spacer {
     display: none;
   }
@@ -583,7 +584,6 @@ h3 {
     height: auto;
     width: auto;
     padding-top: 0;
->>>>>>> da31e3ff1c5488db87bb593a491a0cddb4be33df
   }
 
   #important-info .info {
