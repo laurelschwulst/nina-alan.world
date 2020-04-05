@@ -227,6 +227,10 @@ h2.mobile {
   font-size: 2em;
 }
 
+#about .paper p:first-child {
+  margin-top: 0;
+}
+
 .paragraph {
   margin-top: 2em;
 }
