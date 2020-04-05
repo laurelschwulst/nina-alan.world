@@ -191,12 +191,16 @@ nav a {
   justify-content: center;
 }
 
-#important-info .mobile {
+p.mobile,
+h4.mobile,
+nav.mobile-mini,
+#important-info .mobile,
+#mobile-pictures {
   display: none;
 }
 
-nav.mobile-mini {
-  display: none;
+h4.mobile {
+  margin-bottom: 0;
 }
 
 #important-info .pic {
@@ -219,7 +223,7 @@ h2.mobile {
   display: none;
 }
 
-p.special-info {
+.paper p.special-info {
   font-size: 2em;
 }
 
@@ -514,13 +518,14 @@ h3 {
     height: auto;
   }
 
-  body {
+  html {
     overflow-x: hidden;
   }
 
   .space,
   .planet,
-  .planet-image {
+  .planet-image,
+  table.desktop {
     display: none;
   }
 
@@ -573,7 +578,10 @@ h3 {
     margin-top: 0;
   }
 
-  h2.mobile {
+  h2.mobile,
+  p.mobile,
+  h4.mobile,
+  #mobile-pictures {
     display: block;
   }
 
@@ -640,7 +648,7 @@ h3 {
     font-size: 12.8px;
   }
 
-  p.special-info {
+  .paper p.special-info {
     font-size: 1.2em;
   }
 
@@ -648,11 +656,25 @@ h3 {
     float: none;
     width: auto;
     font-size: 1.5em;
+    margin-top: 3.2em;
     font-family: 'century';
+    background: transparent;
   }
 
   .paragraph {
     margin-top: 1em;
+  }
+
+  #planet-alan {
+    display: none;
+  }
+
+  #travel,
+  #accommodations,
+  #itinerary,
+  #registry,
+  #about {
+    margin-top: 3.6em;
   }
 
 }
