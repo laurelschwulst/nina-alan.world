@@ -100,8 +100,8 @@ table {
 body {
   font-family: 'century';
   /* font-family: Wingdings, fantasy !important; */
-  width: 1200vw;
-  height: 3000vh;
+  /* width: 1200vw; */
+  /* height: 3000vh; */
   margin: 0;
 }
 
@@ -170,7 +170,6 @@ nav a {
   padding-bottom: 1em;
   position: relative;
   z-index: 2;
-  font-size: 4.5em;
   line-height: 1.1;
   max-width: 1000px;
   margin: 0 auto;
@@ -194,16 +193,18 @@ nav a {
 }
 
 #important-info .pic {
-  /* position: absolute;
-  top: -12px;
-  right: 16px;
-  max-width: 212px;
-  z-index: 1; */
   max-width: 240px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 5.5em;
+  margin: 0.5em 0;
 }
 
 .main-nav__section-links a,
@@ -257,7 +258,7 @@ section {
 }
 
 #itinerary {
-  top: 200vh;
+  top: 2000vh;
   left: 800vw;
 }
 
@@ -273,18 +274,19 @@ section {
 
 .space {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 40vh;
+  height: 40vh;
+  padding: 20px;
 }
 
 .space.large {
-  width: 800px;
-  height: 800px;
+  width: 80vh;
+  height: 80vh;
 }
 
 #image-one {
-  top: 210vw;
-  left: 340vh;
+  top: 220vw;
+  left: 350vh;
 }
 
 #image-two {
@@ -303,7 +305,7 @@ section {
 }
 
 #image-five {
-  top: 2000vh;
+  top: 1400vh;
   left: 800vw;
 }
 
@@ -312,16 +314,17 @@ section {
   left: 900vw;
 }
 
+#special-pics {
+  left: 900vw;
+  top: 1800vh;
+}
+
 .planet {
   float: left;
   width: 40vh;
   height: 40vh;
   margin-right: 2vw;
   margin-bottom: 2vw;
-  /* font-family: 'century italic'; */
-  /* font-size: 4em; */
-  /* letter-spacing: 0.05em; */
-  /* transform: rotate(-12deg); */
 }
 
 .planet div {
@@ -385,7 +388,7 @@ section {
   background: rgb(25, 14, 111);
   padding: 0.2em;
   float: left;
-  max-width: 500px;
+  width: 50vw;
   font-size: 2em;
   font-family: 'century italic';
 }
@@ -497,11 +500,14 @@ h3 {
   }
 
   #important-info .info {
-    font-size: 3.2em;
     line-height: 1.2;
     padding: 0.5em;
     padding-right: 1em;
     padding-left: 1em;
+  }
+
+  h1 {
+    font-size: 4em;
   }
 
   h3 {
@@ -533,11 +539,15 @@ h3 {
     padding: 1em;
   }
 
+  h1 {
+    font-size: 2.2em;
+    margin-top: 0;
+  }
+
   #important-info .info {
     padding: 0.5em;
     padding-top: 1em;
     padding-bottom: 1em;
-    font-size: 1.8em;
     line-height: 1.15;
     max-width: 400px;
   }
