@@ -519,12 +519,35 @@ h3 {
 
 @media screen and (max-width: 550px) {
 
+  body, html {
+    width: auto;
+    height: auto;
+  }
+
+  .space,
+  .planet,
+  .planet-image,
+  .background-star {
+    display: none;
+  }
+
   section {
-    padding: 2px;
+    padding: 1em;
+    height: auto;
+    min-height: 0;
+    width: auto;
+    position: static;
   }
 
 	.main-nav {
+    position: static;
     font-size: 0.8em;
+    padding-bottom: 1em;
+  }
+
+  .main-nav__section-links {
+    display: flex;
+    flex-direction: column;
   }
 
   .main-nav__section-links a, .main-nav__home-link__container a {
@@ -532,6 +555,7 @@ h3 {
   }
 
   .paper {
+    float: none;
     margin-right: 0;
   }
 
@@ -539,9 +563,27 @@ h3 {
     padding: 1em;
   }
 
+<<<<<<< HEAD
   h1 {
     font-size: 2.2em;
     margin-top: 0;
+=======
+  .spacer {
+    display: none;
+  }
+
+  #home {
+    width: auto;
+    height: auto;
+    min-height: 0;
+  }
+
+  #important-info {
+    position: static;
+    height: auto;
+    width: auto;
+    padding-top: 0;
+>>>>>>> da31e3ff1c5488db87bb593a491a0cddb4be33df
   }
 
   #important-info .info {
@@ -549,7 +591,6 @@ h3 {
     padding-top: 1em;
     padding-bottom: 1em;
     line-height: 1.15;
-    max-width: 400px;
   }
   
   #important-info .welcome {
