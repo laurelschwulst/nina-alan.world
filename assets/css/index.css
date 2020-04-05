@@ -530,7 +530,7 @@ h3 {
   }
 
   section {
-    padding: 1em;
+    padding: 1em 0.8em;
     height: auto;
     min-height: 0;
     width: auto;
