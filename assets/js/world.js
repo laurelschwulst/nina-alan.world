@@ -162,13 +162,12 @@ function createStars() {
   const starChance = 0.1;
   const scrollWidth = document.scrollingElement.scrollWidth;
   const scrollHeight= document.scrollingElement.scrollHeight;
-  const rows = Math.round(scrollWidth / starTargetSize);
-  const columns = Math.round(scrollHeight / starTargetSize);
-  const w = scrollHeight  / columns;
-  const h = scrollWidth / rows;
+  const rows = Math.round(scrollHeight / starTargetSize);
+  const columns = Math.round(scrollWidth / starTargetSize);
+  const w = Math.floor(scrollWidth  / columns);
+  const h = scrollHeight / rows;
 
   const fragment = document.createDocumentFragment()
-  console.log('creating stars', w, h)
 
   for (let y = 0; y < rows; ++y) {
     for (let x = 0; x < columns; ++x) {
@@ -186,9 +185,9 @@ function createStars() {
 function getStar(x, y, w, h, size) {
   const star = document.createElement("div")
   star.className = `background-star background-star-${Math.ceil(Math.random() * 3)}`
-  star.style.transform = `translate(${Math.round(x * w)}px, ${Math.round(y * h)}px)`
-  star.style.width = Math.round(size) + 'px'
-  star.style.height = Math.round(size) + 'px'
+  star.style.transform = `translate(${Math.floor(x * w)}px, ${Math.floor(y * h)}px)`
+  star.style.width = Math.floor(size) + 'px'
+  star.style.height = Math.floor(size) + 'px'
   return star
 }
 
