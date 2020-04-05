@@ -26,9 +26,11 @@
               <a href="#travel"><img src="assets/images/milkyway-4.png"></a>
             </div>
             <div class="welcome">
-              ***<br><br>
-              Welcome, friends.<br><br>Please explore our galaxy with the buttons above...<br><br>Love, Alan & Nina<br><br>
-              ***
+              <div>
+                ***<br><br>
+                Welcome, friends.<br><br>Please explore our galaxy with the buttons <span class="desktop">above</span><span class="mobile">below</span>...<br><br>Love, Alan & Nina<br><br>
+                ***
+              </div>
             </div>
           </div>
         </div>
@@ -37,7 +39,7 @@
     <!-- home: end -->
 
     <!-- nav: start -->
-    <nav class="main-nav">
+    <nav class="main-nav" id="menu">
       <div class="main-nav__home-link__container">
         <ul class="main-nav__section-links">
           <li><a href="#home">Home</a></li>
@@ -53,6 +55,10 @@
 
     <!-- travel: start -->
     <section id="travel">
+
+      <h2 class="mobile">Travel</h2>
+
+      <nav class="mobile-mini"><a href="#menu">Menu</a></nav>
 
       <div class="planet medium">
         <a href="#accommodations">
@@ -154,6 +160,10 @@
     <!-- accommodations: start -->
     <section id="accommodations">
 
+      <h2 class="mobile">Accommodations</h2>
+
+      <nav class="mobile-mini"><a href="#menu">Menu</a></nav>
+
       <div class="planet large">
         <a href="#itinerary">
           <video autoplay muted loop>
@@ -205,6 +215,10 @@
     <!-- itinerary: start -->
     <section id="itinerary">
 
+      <h2 class="mobile">Itinerary</h2>
+
+      <nav class="mobile-mini"><a href="#menu">Menu</a></nav>
+
       <div class="planet medium">
         <a href="#registry">
           <video autoplay muted loop>
@@ -219,7 +233,7 @@
           Celebration
         </h3>
 
-        <p style="font-size: 2em;">
+        <p class="special-info">
           The Franklin Institute<br>
           Saturday, August 29th<br>
           6:00 pm - 11:00 pm
@@ -309,6 +323,10 @@
     <!-- registry: start -->
     <section id="registry">
 
+      <h2 class="mobile">Registry</h2>
+
+      <nav class="mobile-mini"><a href="#menu">Menu</a></nav>
+
       <div class="planet small">
         <a href="#about">
           <video autoplay muted loop>
@@ -333,6 +351,10 @@
 
     <!-- about: start -->
     <section id="about">
+
+      <h2 class="mobile">About</h2>
+
+      <nav class="mobile-mini"><a href="#menu">Menu</a></nav>
 
       <div class="planet large">
         <a href="#planet-alan">
@@ -369,7 +391,7 @@
           Nina & Alan
         </p>
 
-        <div style="margin-top: 2em;" class="paragraph">
+        <div class="paragraph">
           p.s. There are
           <div id="countdowns" style="display: inline;"><div id="party-countdown" style="display: inline;"></div></div> (on August 29, 2020)!
         </div>
@@ -411,6 +433,10 @@
     <!-- planet alan: start -->
     <section id="planet-alan">
 
+      <h2 class="mobile">Alan's Planet</h2>
+
+      <nav class="mobile-mini"><a href="#menu">Menu</a></nav>
+
       <div class="planet larger">
         <a href="http://alan-nina.world">
           <video autoplay muted loop>
@@ -433,6 +459,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
     <script src="assets/js/globe.js"></script>
     <script src="assets/js/world.js"></script>
-    
+
   </body>
 </html>

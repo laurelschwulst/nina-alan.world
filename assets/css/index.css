@@ -101,9 +101,6 @@ table {
 
 body {
   font-family: 'century';
-  /* font-family: Wingdings, fantasy !important; */
-  /* width: 1200vw; */
-  /* height: 3000vh; */
   margin: 0;
 }
 
@@ -194,6 +191,14 @@ nav a {
   justify-content: center;
 }
 
+#important-info .mobile {
+  display: none;
+}
+
+nav.mobile-mini {
+  display: none;
+}
+
 #important-info .pic {
   max-width: 240px;
   margin: 0 auto;
@@ -207,6 +212,19 @@ h1 {
   margin: 0;
   font-size: 5.5em;
   margin: 0.5em 0;
+}
+
+h2.mobile {
+  font-weight: normal;
+  display: none;
+}
+
+p.special-info {
+  font-size: 2em;
+}
+
+.paragraph {
+  margin-top: 2em;
 }
 
 .main-nav__section-links a,
@@ -250,27 +268,32 @@ section {
 }
 
 #travel {
-  top: 120vw;
-  left: 200vh;
+  top: 100vh;
+  left: 200vw;
 }
 
 #accommodations {
-  top: 220vw;
-  left: 400vh;
+  top: 220vh;
+  left: 400vw;
 }
 
 #itinerary {
-  top: 2000vh;
-  left: 800vw;
+  top: 800vh;
+  left: 100vw;
 }
 
 #registry {
-  top: 2800vh;
-  left: 700vw;
+  top: 1000vh;
+  left: 400vw;
 }
 
 #about {
-  top: 20vh;
+  top: 500vh;
+  left: 600vw;
+}
+
+#planet-alan {
+  top: 1100vh;
   left: 600vw;
 }
 
@@ -284,41 +307,6 @@ section {
 .space.large {
   width: 80vh;
   height: 80vh;
-}
-
-#image-one {
-  top: 220vw;
-  left: 350vh;
-}
-
-#image-two {
-  top: 260vh;
-  left: 700vw;
-}
-
-#image-three {
-  top: 2600vh;
-  left: 750vw;
-}
-
-#image-four {
-  top: 800vh;
-  left: 750vw;
-}
-
-#image-five {
-  top: 1400vh;
-  left: 800vw;
-}
-
-#planet-alan {
-  top: 2800vh;
-  left: 900vw;
-}
-
-#special-pics {
-  left: 900vw;
-  top: 1800vh;
 }
 
 .planet {
@@ -526,6 +514,10 @@ h3 {
     height: auto;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .space,
   .planet,
   .planet-image {
@@ -538,6 +530,14 @@ h3 {
     min-height: 0;
     width: auto;
     position: static;
+  }
+
+  #important-info .mobile {
+    display: inline;
+  }
+
+  #important-info .desktop {
+    display: none;
   }
 
 	.main-nav {
@@ -564,9 +564,33 @@ h3 {
     padding: 1em;
   }
 
+  .paper:last-child {
+    margin-bottom: 0;
+  }
+
   h1 {
     font-size: 2.2em;
     margin-top: 0;
+  }
+
+  h2.mobile {
+    display: block;
+  }
+
+  nav.mobile-mini {
+    display: block;
+    float: right;
+    margin-top: -2.6em;
+  }
+
+  nav.mobile-mini a {
+    padding: 0.6em 0.9em 0.5em;
+    font-size: 12.8px;
+    border: 1px solid white;
+  }
+
+  h3 {
+    font-size: 1.75em;
   }
   
   .spacer {
@@ -610,8 +634,25 @@ h3 {
   }
 
   td,
-  .did-you-know {
+  .did-you-know .info,
+  .paper p,
+  .paragraph {
     font-size: 12.8px;
+  }
+
+  p.special-info {
+    font-size: 1.2em;
+  }
+
+  .space-fact {
+    float: none;
+    width: auto;
+    font-size: 1.5em;
+    font-family: 'century';
+  }
+
+  .paragraph {
+    margin-top: 1em;
   }
 
 }
