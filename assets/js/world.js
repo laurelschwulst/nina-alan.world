@@ -13,7 +13,7 @@ $(document).ready(function() {
   );
   createCountdown(
     "#party-countdown",
-    new Date("2020-08-29T12:00:00-05:00"),
+    new Date("2021-07-17T12:00:00-05:00"),
     "our celebration"
   );
 
